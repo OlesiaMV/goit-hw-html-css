@@ -239,15 +239,6 @@ img {
   position: relative;
 }
 
-.collection_list div:hover .btn-one,
-.collection_list div:focus .btn-one {
-  background-color: #1abc9c;
-}
-
-.collection_list div:hover .btn-two,
-.collection_list div:focus .btn-two {
-  background-color: #7fd9c7;
-}
 
 .btn {
   position: absolute;
@@ -300,6 +291,7 @@ img {
   position: absolute;
   transform: translateY(75%);
   list-style: none;
+  
 }
 
 .overlay_list-item {
@@ -310,9 +302,21 @@ img {
   margin-right: 8px;
 }
 
+.collection_list div:hover .btn-one,
+.collection_list div:focus .btn-one {
+  background-color: #1abc9c;
+}
+
+.collection_list div:hover .btn-two,
+.collection_list div:focus .btn-two {
+  background-color: #7fd9c7;
+}
+
+
 .collection_list:hover .overlay {
   opacity: 1;
   visibility: visible;
+
 }
 
 .overlay_list-link {
@@ -322,10 +326,12 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .buttom_one {
   background-image: url(../img/heart.png);
+ 
 }
 
 .buttom_two {
@@ -346,6 +352,7 @@ img {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   padding-left: 58px;
+
 }
 
 .buttom_four::before {
@@ -359,20 +366,22 @@ img {
   left: 10px;
 }
 
-.overlay_list li:hover .buttom_one,
-.overlay_list li:focus .buttom_one {
+.overlay li:hover .buttom_one,
+.overlay li:focus .buttom_one {
+  background-color: #1abc9c;
+ 
+}
+
+
+.overlay li:hover .buttom_two {
   background-color: #1abc9c;
 }
 
-.overlay_list li:hover .buttom_two {
+.overlay li:hover .buttom_three {
   background-color: #1abc9c;
 }
 
-.overlay_list li:hover .buttom_three {
-  background-color: #1abc9c;
-}
-
-.overlay_list li:hover .buttom_four {
+.overlay li:hover .buttom_four {
   background-color: #323232;
 }
 
@@ -397,3 +406,5 @@ footer {
 .footer_text-two:hover {
   color: #84d3c2;
 }
+
+
