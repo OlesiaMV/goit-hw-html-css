@@ -65,7 +65,7 @@ body {
 .site_navigation li:hover a:after {
   background-color: rgb(243, 129, 129);
   opacity: 1;
-  transition: 0.2s linear;
+  transition: 0.5s linear;
 }
 
 .site_navigation a {
@@ -78,6 +78,7 @@ body {
 .site_navigation a:hover,
 .site_navigation a:focus {
   color: rgb(243, 129, 129);
+
 }
 
 .tetx {
@@ -244,6 +245,8 @@ h2::after {
 .about_list:hover .about_list-img {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px rgb(149, 225, 211);
+  transition: all 0.5s linear;
+  
 }
 
 .about_overlay {
@@ -259,12 +262,13 @@ h2::after {
   left: 0;
   opacity: 0;
   background-clip: padding-box;
-  transition: all 0.2s linear;
   display: flex;
 }
 
 .about_overlay:hover {
   opacity: 1;
+ 
+ 
 }
 
 .overlay {
@@ -273,6 +277,8 @@ h2::after {
   transform: translateY(207px);
   display: flex;
   list-style: none;
+  
+  
 }
 
 .overlay_list-link {
@@ -281,7 +287,7 @@ h2::after {
   height: 56px;
   background-position: center;
   background-repeat: no-repeat;
-  transition: all 0.2s linear;
+  transition:  0.5s linear;
   background-color: rgb(252, 227, 138);
   margin-right: 1px;
   opacity: 1;
@@ -290,6 +296,7 @@ h2::after {
 
 .overlay_list {
   display: flex;
+
 }
 
 .overlay_list-link:hover {
