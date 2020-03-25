@@ -1,0 +1,157 @@
+
+@media (min-width: 768px) {
+.container {
+    width: 768px;
+}
+
+.page_header {
+    width: 768px;
+    height: 700px; 
+    background-image: url("../img/Vector2.png");
+}
+
+.page_nav {
+padding: 38px 54px 0;
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+}
+
+.nav_section {
+    padding-top: 0;
+}
+
+.site_logo {
+    transform: none;
+}
+
+.section_one-h1 {
+    font-size: 52px; 
+    line-height: 62px;
+    letter-spacing: 2.6px;
+    padding: 0 108px;
+    transform: translateY(-592px); 
+}
+
+.section_one-text {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    transform: translateY(-440px);
+    padding-left: 178px;
+}
+  
+.section_one-btn {
+    width: 226px;
+    height: 40px;
+    transform: translate(266px, -346px);
+}
+   
+/* SECTION SECOND */
+
+.section_second-h2 {
+    margin-top: 74px;
+    margin-bottom: 34px;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+  
+.section_second_list {
+    display: flex;
+    margin: 0;
+    padding: 0 138px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section_second-item {
+    margin-bottom: 0;
+    width: 236px; 
+  }
+
+  .section_second-item:not(:nth-last-child(-n+3)) {
+       margin-bottom: 56px;
+  } 
+
+  .section_second-box {
+   width: 120px;
+   margin-left: 56px;
+  }
+  
+  .section_second-img {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .section_second-icon::after {
+    transform: translate(45px, -40px);
+  }
+
+  .first {
+      order: 1;
+  }
+
+  .second {
+      order: 3;
+  }
+
+  .third {
+      order: 2;
+  }
+
+  .fourth {
+      order: 4;
+  }
+
+.section_second-text {
+padding: 0;
+margin-bottom: 0;
+}
+
+.section_second-btn {
+    margin-top: 36px;
+}
+   
+}
+
+@media (min-width: 960px) {
+    .container {
+        width: 940px;
+       
+    }
+
+    .page_header {
+    width:950px;
+        background-image: url("../img/Vector3.png");
+}
+
+.page_nav {
+    padding: 46px 0 0; 
+}
+
+.section_one-h1 {
+    padding: 0 205px;
+}
+
+.section_one-text {
+    transform: translate(55%, -1550%);
+      padding-left: 0;  
+}
+
+.section_one-btn {
+    transform: translate(350px, -346px);
+}
+
+.section_second-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 0;
+} 
+
+.section_second_list {
+       padding: 0;
+}
+.section_second-item {
+    flex: 0 0 220px;
+ 
+}
+
+}
