@@ -1,0 +1,129 @@
+@media (min-width: 768px) {
+    .container {
+       width: 768px;
+        margin: 0 auto;
+      }
+
+      .header {
+          background-image: url("../img/img_1-2.png");
+      }
+
+     .nav {
+   padding-top: 37px; 
+    }
+
+    .nav-logo {
+        display: flex;
+        align-content: flex-start;    
+    }
+
+    .photo {
+        position: relative; 
+         height: 700px;
+         width: 768px;
+    }
+        .logo {
+            display: flex;
+            align-content: flex-start;
+            padding-top: 10px;
+        }
+
+        .text-first {
+            display: flex;
+            padding: 0;
+            align-items: center;  
+        }
+
+        .text-second {
+            line-height: 63px;
+            font-size: 52px;
+            padding-top: 145px; 
+        }
+
+        .text {
+        line-height: 29px;
+        font-size: 24px;
+        padding: 0 0 30px;    
+        }
+
+        .button-second {
+            display: block;
+            width: 226px;
+            margin: 0 auto;  
+        }
+
+        .section-second {
+            padding-top: 70px;
+            margin: 0 auto;
+        }
+
+        .team-section {
+            display: flex; 
+            flex-wrap: wrap;
+                  }
+
+        .text-three {
+            padding-bottom: 30px;
+        }
+ 
+        .one {
+            order: 1;
+        }
+
+        .two {
+            order: 3;
+        }
+
+        .three {
+            order: 2;
+        }
+
+        .four {
+            order: 4;
+       }  
+
+    .team {
+        flex: 0 0 236px;
+        margin-bottom: 55px;
+        }  
+
+        .team:nth-child(even) {
+            margin-bottom: 0;
+        }
+
+        .button-three {
+    width: 190px;
+            margin: 38px 0;
+        }
+    }
+   
+
+    @media (min-width: 992px) {
+        .container {
+            width: 992px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-image: url("../img/img_1-4.png");
+        }
+
+          .photo {
+               height: 700px;
+
+          }
+        
+        .section-second {  
+            margin: 0 auto;
+        }
+
+        .team {
+            flex: 0 0 220px;
+            margin-bottom: 36px;
+        }  
+
+         .button-three {
+            margin-bottom: 70px;
+     }
+  
+    }
