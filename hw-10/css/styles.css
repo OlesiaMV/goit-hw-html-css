@@ -138,7 +138,19 @@ img {
 }
 
 .page-header {
-  background-image: -webkit-gradient(
+  max-width: 1920px;
+  position: relative;
+  height: 1000px;
+  color: #ffffff;
+  background: url("../img/eagle-min.png");
+  
+}
+
+.page-header::before {
+  display: block;
+  content: "";
+  position: absolute;
+ background-image: -webkit-gradient(
     linear,
     left bottom, left top,
     from(rgba(252, 227, 138, 0.74)),
@@ -154,15 +166,17 @@ img {
     rgba(252, 227, 138, 0.74) 0%,
     rgba(243, 129, 129, 0.87) 100%
   );
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.74) 0%,
+    rgba(243, 129, 129, 0.87) 100%);
+ width: 1920px;
+  height: 1000px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  max-width: 1920px;
-  position: relative;
   margin: 0 auto;
   padding: 0;
-  height: 1000px;
-  color: #ffffff;
 }
 
 .container {
