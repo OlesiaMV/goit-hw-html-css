@@ -1,0 +1,80 @@
+.footer {
+    height: 64px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        
+
+            &__decoration {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        flex-direction: row;       
+                        @extend %aling-hor-between;
+                margin-bottom: 12px;
+              }
+              
+              &__decoration-text {
+                margin: 0;
+                padding: 0;
+                padding-top: 22px;
+                @include fonts($secondary-font, 500, 14px, 16px);
+              }
+              
+             &__decoration-red-linea {
+                color: #f6a6a6;
+              }
+              
+              &__table {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        flex-direction: row;
+                        @extend %aling-hor-between;
+                margin-top: 10px;
+              }
+              
+           &__table-email {
+                margin: 0;
+                @include fonts("Roboto", 200, 15px, 18px);
+                border: 1px solid #e5e5e5;
+                width: 230px;
+                height: 40px;
+                padding-left: 26px;
+                padding-top: 10px;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        flex-direction: row;
+                        @extend %aling-hor-between;
+              }
+              
+            &__table-button {
+                margin: 0;
+                @include fonts($secondary-font, 700, 14px, 17px);
+                text-transform: uppercase;
+                text-align: center;
+                width: 150px;
+                height: 40px;
+                background-color: #4ec6ab;
+                color: $main-color;
+                border: none;
+                cursor: pointer;
+              }                   
+  }
+  
+ 
+  
+  

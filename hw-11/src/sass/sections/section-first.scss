@@ -1,0 +1,126 @@
+.section-first {
+  width: 1200px;
+  margin: 0 auto;
+    padding-top: 40px;
+  }
+  
+  .text-first {
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 18px;
+    font-weight: 400;
+  }
+  
+  .text-second {
+    @include fonts($secondary-font, 700, 30px, 36px);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  
+  .text-second::after {
+    @extend %pseudo;
+    background-color: #f38181;
+    height: 3px;
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .amazing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        @extend %aling-hor-between;
+    padding: 0;
+    min-height: 260px;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    margin: 0;
+
+    &__servises {
+      padding: 0;
+      width: 381px;
+      list-style: none;
+      padding-left: 13px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 90px;
+    }
+    
+    &__servises:nth-last-child(-n + 3) {
+      margin-bottom: 93px;
+    }
+    
+    &__servises-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      padding-left: 27px;
+    }
+    
+   &__servises-name {
+      margin: 0;
+      @include fonts($secondary-font, 600, 14px, 17px); 
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      color: #404040;
+    }
+    
+    &__servises-discription {
+      margin: 0;
+      @include fonts("Roboto", 400, 15px, 24px); 
+    }
+    
+    &__servises::before {
+      @extend %pseudo;
+      min-height: 35px;
+      min-width: 35px;
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+   
+  }
+  
+
+
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .amazing__icon-alarm::before {
+      background-image: url("../images/alarm.png");
+    }
+  
+    .amazing__icon-design::before {
+      background-image: url("../images/design.png");
+    }
+  
+    .amazing__icon-laptop::before {
+      background-image: url("../images/laptop.png");
+    }
+  
+    .amazing__icon-book::before {
+      background-image: url("../images/book.png");
+    }
+  
+    .amazing__icon-house::before {
+      background-image: url("../images/house.png");
+    }
+  
+    .amazing__icon-software::before {
+      background-image: url("../images/software.png");
+    }
+  }

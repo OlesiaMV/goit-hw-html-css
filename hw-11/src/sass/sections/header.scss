@@ -1,0 +1,157 @@
+.page-header {
+  max-width: 1920px;
+  position: relative;
+  height: 1000px;
+  color: $main-color;
+  background: url("../images/eagle-min.png");
+}
+
+.page-header::before {
+  @extend %pseudo;
+  position: absolute;
+ background-image: -webkit-gradient(
+    linear,
+    left bottom, left top,
+    from(rgba(252, 227, 138, 0.74)),
+    to(rgba(243, 129, 129, 0.87))
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.74) 0%,
+    rgba(243, 129, 129, 0.87) 100%
+  );
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.74) 0%,
+    rgba(243, 129, 129, 0.87) 100%
+  );
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.74) 0%,
+    rgba(243, 129, 129, 0.87) 100%);
+ width: 1920px;
+  height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: 0 auto;
+  padding: 0;
+}
+  
+  .page-container {
+    position: relative;
+  }
+  
+  .page-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 50px;
+    @extend %aling-hor-between;
+    padding-top: 30px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-bottom: 160px;
+    opacity: 1;
+  }
+  
+  .logo {
+    width: 100px;
+    @include fonts($secondary-font, 700, 30px, 36px);
+    margin-left: 0;
+    font-style: normal;
+    display: inline-block;
+  }
+
+  .site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 620px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @extend %aling-hor-between;
+    @include fonts($secondary-font, 500, 14px, 16px); 
+     text-transform: uppercase;
+  }
+  
+  .site-navigation a {
+    color: $main-color;
+    text-decoration: none;
+    display: block;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
+  
+  .site-navigation__nav-link::after {
+    @extend %pseudo;
+    background-color: #fce38a;
+    height: 3px;
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 12px;
+    opacity: 0;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    -webkit-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  
+  .site-navigation__nav-link:hover::after {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+  }
+  
+  .site-navigation a:hover {
+    color: #fce38a;
+  }
+  
+  .site-navigation__svg {
+    width: 18px;
+    height: 18px;
+    fill: $main-color;
+  }
+  
+  .site-navigation__svg:hover {
+    fill: #fce38a;
+  }
+  
+  .page-header__text-one {
+    @include fonts("Kaushan Script", 400, 72px, 87px); 
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  .page-header__text {
+    @include fonts($secondary-font, 700, 150px, 140px); 
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 160px;
+    margin: 0;
+  }
+  
+  .page-header__button-nav {
+    display: block;
+    cursor: pointer;
+    @include fonts($secondary-font, 700, 14px, 17px); 
+    text-transform: uppercase;
+    width: 160px;
+    height: 40px;
+    border: 3px solid $main-color;
+    background-color: Transparent;
+    color: $main-color;
+    margin: 0 auto;
+    margin-top: 120px;
+  }
+  
+  
